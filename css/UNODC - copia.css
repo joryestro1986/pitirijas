@@ -1,0 +1,1193 @@
+﻿
+
+.btncab {
+    font-size: 15px;
+    font-weight: 800;
+}
+
+.btncab2 {
+    font-size: 13px;
+    font-weight: 600;
+}
+
+
+
+.btndiv {
+    cursor: pointer;
+    color: #676a6c !important;
+}
+
+.btndivUNAPS {
+    cursor: pointer;
+    color: #676a6c !important;
+}
+
+.btndivSistemaPen {
+    cursor: pointer;
+    color: #676a6c !important;
+}
+
+.btndivOrganoPen {
+    cursor: pointer;
+    color: #676a6c !important;
+}
+
+
+
+
+    .btndiv.active {
+        background-color: #79188e;
+        color: white !important;
+    }
+
+    .btndiv:hover {
+        background-color: #79188e;
+        color: white !important;
+    }
+
+
+
+    .btndivUNAPS.active {
+        background-color: #802981;
+        color: white !important;
+    }
+
+    .btndivUNAPS:hover {
+        background-color: #802981;
+        color: white !important;
+    }
+
+
+    .btndivSistemaPen.active {
+        background-color: #049C94;
+        color: white !important;
+    }
+
+    .btndivSistemaPen:hover {
+        background-color: #049C94;
+        color: white !important;
+    }
+
+    .btndivOrganoPen.active {
+        background-color: #b88b48;
+        color: white !important;
+    }
+
+    .btndivOrganoPen:hover {
+        background-color: #242C84;
+        color: white !important;
+    }
+
+
+
+
+
+
+
+.btn-default2 {
+    color: white !important;
+    background: #808080 !important;
+    border: 1px solid #e7eaec;
+    padding: 10px;
+}
+
+    .btn-default2:hover, .btn-default2.active {
+        color: white !important;
+        background: #4cba55 !important;
+        border: 1px solid #e7eaec;
+        padding: 10px;
+    }
+
+.btn-default3 {
+    color: white !important;
+    background: #808080 !important;
+    border: 1px solid #e7eaec;
+    padding: 10px;
+}
+
+    .btn-default3:hover, .btn-default3.active {
+        color: white !important;
+        background: #79188e !important;
+        border: 1px solid #e7eaec;
+        padding: 10px;
+    }
+
+.btn-default4 {
+    color: white !important;
+    background: #808080 !important;
+    border: 1px solid #e7eaec;
+    padding: 10px;
+}
+
+    .btn-default4:hover, .btn-default4.active {
+        color: white !important;
+        background: #e6d52f !important;
+        border: 1px solid #e7eaec;
+        padding: 10px;
+    }
+
+
+
+
+
+
+/**AQUI EMPIEZA**/
+
+
+
+.btn-T1 {
+    background-image: url(../img/T_01_I.png);
+    background-size: cover;
+}
+
+    .btn-T1:hover, .btn-T1.active {
+        background-image: url(../img/T_01_M.png);
+    }
+
+.btn-T2 {
+    background-image: url(../img/T_02_I.png);
+    background-size: cover;
+}
+
+    .btn-T2:hover, .btn-T2.active {
+        background-image: url(../img/T_02_M.png);
+    }
+
+.btn-T3 {
+    background-image: url(../img/T_03_I.png);
+    background-size: cover;
+}
+
+    .btn-T3:hover, .btn-T3.active {
+        background-image: url(../img/T_03_M.png);
+    }
+
+.btn-T4 {
+    background-image: url(../img/T_04_I.png);
+    background-size: cover;
+}
+
+    .btn-T4:hover, .btn-T4.active {
+        background-image: url(../img/T_04_M.png);
+    }
+
+.btn-T5 {
+    background-image: url(../img/T_05_I.png);
+    background-size: cover;
+}
+
+    .btn-T5:hover, .btn-T5.active {
+        background-image: url(../img/T_05_M.png);
+    }
+
+.btn-T6 {
+    background-image: url(../img/T_06_I.png);
+    background-size: cover;
+}
+
+    .btn-T6:hover, .btn-T6.active {
+        background-image: url(../img/T_06_M.png);
+    }
+
+.btn-T7 {
+    background-image: url(../img/T_07_I.png);
+    background-size: cover;
+}
+
+    .btn-T7:hover, .btn-T7.active {
+        background-image: url(../img/T_07_M.png);
+    }
+
+.btn-T8 {
+    background-image: url(../img/T_08_I.png);
+    background-size: cover;
+}
+
+    .btn-T8:hover, .btn-T8.active {
+        background-image: url(../img/T_08_M.png);
+    }
+
+.btn-T9 {
+    background-image: url(../img/T_09_I.png);
+    background-size: cover;
+}
+
+    .btn-T9:hover, .btn-T9.active {
+        background-image: url(../img/T_09_M.png);
+    }
+
+.btn-T10 {
+    background-image: url(../img/T_10_I.png);
+    background-size: cover;
+}
+
+    .btn-T10:hover, .btn-T10.active {
+        background-image: url(../img/T_10_M.png);
+    }
+
+.btn-T11 {
+    background-image: url(../img/T_11_I.png);
+    background-size: cover;
+}
+
+    .btn-T11:hover, .btn-T11.active {
+        background-image: url(../img/T_11_M.png);
+    }
+
+.btn-T12 {
+    background-image: url(../img/T_12_I.png);
+    background-size: cover;
+}
+
+    .btn-T12:hover, .btn-T12.active {
+        background-image: url(../img/T_12_M.png);
+    }
+
+.btn-P1 {
+    background-image: url(../img/Poblacion1.png);
+    background-size: cover;
+}
+
+    .btn-P1:hover, .btn-P1.active {
+        background-image: url(../img/Poblacion1_M.png);
+    }
+
+.btn-P2 {
+    background-image: url(../img/Poblacion2.png);
+    background-size: cover;
+}
+
+    .btn-P2:hover, .btn-P2.active {
+        background-image: url(../img/Poblacion2_M.png);
+    }
+
+.btn-P3 {
+    background-image: url(../img/Poblacion3.png);
+    background-size: cover;
+}
+
+    .btn-P3:hover, .btn-P3.active {
+        background-image: url(../img/Poblacion3_M.png);
+    }
+
+.btn-P4 {
+    background-image: url(../img/Poblacion4.png);
+    background-size: cover;
+}
+
+    .btn-P4:hover, .btn-P4.active {
+        background-image: url(../img/Poblacion4_M.png);
+    }
+
+.btn-P5 {
+    background-image: url(../img/P_05_I.png);
+    background-size: cover;
+}
+
+    .btn-P4:hover, .btn-P4.active {
+        background-image: url(../img/P_05_M.png);
+    }
+
+
+
+
+
+/**1**/
+
+
+.btn-T1 {
+    background-image: url(../img/T_01_I.png);
+    background-size: cover;
+}
+
+    .btn-T1:hover, .btn-T1.active {
+        background-image: url(../img/T_01_M.png);
+    }
+
+.btn-T2 {
+    background-image: url(../img/T_02_I.png);
+    background-size: cover;
+}
+
+    .btn-T2:hover, .btn-T2.active {
+        background-image: url(../img/T_02_M.png);
+    }
+
+.btn-T3 {
+    background-image: url(../img/T_03_I.png);
+    background-size: cover;
+}
+
+    .btn-T3:hover, .btn-T3.active {
+        background-image: url(../img/T_03_M.png);
+    }
+
+.btn-T4 {
+    background-image: url(../img/T_04_I.png);
+    background-size: cover;
+}
+
+    .btn-T4:hover, .btn-T4.active {
+        background-image: url(../img/T_04_M.png);
+    }
+
+.btn-T5 {
+    background-image: url(../img/T_05_I.png);
+    background-size: cover;
+}
+
+    .btn-T5:hover, .btn-T5.active {
+        background-image: url(../img/T_05_M.png);
+    }
+
+.btn-T6 {
+    background-image: url(../img/T_06_I.png);
+    background-size: cover;
+}
+
+    .btn-T6:hover, .btn-T6.active {
+        background-image: url(../img/T_06_M.png);
+    }
+
+.btn-T7 {
+    background-image: url(../img/T_07_I.png);
+    background-size: cover;
+}
+
+    .btn-T7:hover, .btn-T7.active {
+        background-image: url(../img/T_07_M.png);
+    }
+
+.btn-T8 {
+    background-image: url(../img/T_08_I.png);
+    background-size: cover;
+}
+
+    .btn-T8:hover, .btn-T8.active {
+        background-image: url(../img/T_08_M.png);
+    }
+
+.btn-T9 {
+    background-image: url(../img/T_09_I.png);
+    background-size: cover;
+}
+
+    .btn-T9:hover, .btn-T9.active {
+        background-image: url(../img/T_09_M.png);
+    }
+
+.btn-T10 {
+    background-image: url(../img/T_10_I.png);
+    background-size: cover;
+}
+
+    .btn-T10:hover, .btn-T10.active {
+        background-image: url(../img/T_10_M.png);
+    }
+
+.btn-T11 {
+    background-image: url(../img/T_11_I.png);
+    background-size: cover;
+}
+
+    .btn-T11:hover, .btn-T11.active {
+        background-image: url(../img/T_11_M.png);
+    }
+
+.btn-T12 {
+    background-image: url(../img/T_12_I.png);
+    background-size: cover;
+}
+
+    .btn-T12:hover, .btn-T12.active {
+        background-image: url(../img/T_12_M.png);
+    }
+
+/*.btn-P1 {
+    background-image: url(../img/Poblacion1.png);
+    background-size: cover;
+}
+
+    .btn-P1:hover, .btn-P1.active {
+        background-image: url(../img/Poblacion1_M.png);
+    }
+
+.btn-P2 {
+    background-image: url(../img/Poblacion2.png);
+    background-size: cover;
+}
+
+    .btn-P2:hover, .btn-P2.active {
+        background-image: url(../img/Poblacion2_M.png);
+    }
+
+.btn-P3 {
+    background-image: url(../img/Poblacion3.png);
+    background-size: cover;
+}
+
+    .btn-P3:hover, .btn-P3.active {
+        background-image: url(../img/Poblacion3_M.png);
+    }
+
+.btn-P4 {
+    background-image: url(../img/Poblacion4.png);
+    background-size: cover;
+}
+
+    .btn-P4:hover, .btn-P4.active {
+        background-image: url(../img/Poblacion4_M.png);
+    }
+*/
+
+
+.btn-P1 {
+    background-image: url(../img/P_01_I.png);
+    background-size: cover;
+}
+
+    .btn-P1:hover, .btn-P1.active {
+        background-image: url(../img/P_01_M.png);
+    }
+
+.btn-P2 {
+    background-image: url(../img/P_02_I.png);
+    background-size: cover;
+}
+
+    .btn-P2:hover, .btn-P2.active {
+        background-image: url(../img/P_02_M.png);
+    }
+
+.btn-P3 {
+    background-image: url(../img/P_03_I.png);
+    background-size: cover;
+}
+
+    .btn-P3:hover, .btn-P3.active {
+        background-image: url(../img/P_03_M.png);
+    }
+
+.btn-P4 {
+    background-image: url(../img/P_04_I.png);
+    background-size: cover;
+}
+
+    .btn-P4:hover, .btn-P4.active {
+        background-image: url(../img/P_04_M.png);
+    }
+
+.btn-P5 {
+    background-image: url(../img/P_05_I.png);
+    background-size: cover;
+}
+
+    .btn-P5:hover, .btn-P5.active {
+        background-image: url(../img/P_05_M.png);
+    }
+
+.btn-P6 {
+    background-image: url(../img/P_06_I.png);
+    background-size: cover;
+}
+
+    .btn-P6:hover, .btn-P6.active {
+        background-image: url(../img/P_06_M.png);
+    }
+
+.btn-P7 {
+    background-image: url(../img/P_07_I.png);
+    background-size: cover;
+}
+
+    .btn-P7:hover, .btn-P7.active {
+        background-image: url(../img/P_07_M.png);
+    }
+
+
+
+
+/**2**/
+
+.btn-T1S {
+    background-image: url(../img/T_01_I.png);
+    background-size: cover;
+}
+
+    .btn-T1S:hover, .btn-T1S.active {
+        background-image: url(../img/T_01_S.png);
+    }
+
+.btn-T2S {
+    background-image: url(../img/T_02_I.png);
+    background-size: cover;
+}
+
+    .btn-T2S:hover, .btn-T2S.active {
+        background-image: url(../img/T_02_S.png);
+    }
+
+.btn-T3S {
+    background-image: url(../img/T_03_I.png);
+    background-size: cover;
+}
+
+    .btn-T3S:hover, .btn-T3S.active {
+        background-image: url(../img/T_03_S.png);
+    }
+
+.btn-T4S {
+    background-image: url(../img/T_04_I.png);
+    background-size: cover;
+}
+
+    .btn-T4S:hover, .btn-T4S.active {
+        background-image: url(../img/T_04_S.png);
+    }
+
+.btn-T5S {
+    background-image: url(../img/T_05_I.png);
+    background-size: cover;
+}
+
+    .btn-T5S:hover, .btn-T5S.active {
+        background-image: url(../img/T_05_S.png);
+    }
+
+.btn-T6S {
+    background-image: url(../img/T_06_I.png);
+    background-size: cover;
+}
+
+    .btn-T6S:hover, .btn-T6S.active {
+        background-image: url(../img/T_06_S.png);
+    }
+
+.btn-T7S {
+    background-image: url(../img/T_07_I.png);
+    background-size: cover;
+}
+
+    .btn-T7S:hover, .btn-T7S.active {
+        background-image: url(../img/T_07_S.png);
+    }
+
+.btn-T8S {
+    background-image: url(../img/T_08_I.png);
+    background-size: cover;
+}
+
+    .btn-T8S:hover, .btn-T8S.active {
+        background-image: url(../img/T_08_S.png);
+    }
+
+.btn-T9S {
+    background-image: url(../img/T_09_I.png);
+    background-size: cover;
+}
+
+    .btn-T9S:hover, .btn-T9S.active {
+        background-image: url(../img/T_09_S.png);
+    }
+
+.btn-T10S {
+    background-image: url(../img/T_10_I.png);
+    background-size: cover;
+}
+
+    .btn-T10S:hover, .btn-T10S.active {
+        background-image: url(../img/T_10_S.png);
+    }
+
+.btn-T11S {
+    background-image: url(../img/T_11_I.png);
+    background-size: cover;
+}
+
+    .btn-T11S:hover, .btn-T11S.active {
+        background-image: url(../img/T_11_S.png);
+    }
+
+.btn-T12S {
+    background-image: url(../img/T_12_I.png);
+    background-size: cover;
+}
+
+    .btn-T12S:hover, .btn-T12S.active {
+        background-image: url(../img/T_12_S.png);
+    }
+
+.btn-P1S {
+    background-image: url(../img/P_01_I.png);
+    background-size: cover;
+}
+
+    .btn-P1S:hover, .btn-P1S.active {
+        background-image: url(../img/P_01_S.png);
+    }
+
+.btn-P2S {
+    background-image: url(../img/P_02_I.png);
+    background-size: cover;
+}
+
+    .btn-P2S:hover, .btn-P2S.active {
+        background-image: url(../img/P_02_S.png);
+    }
+
+.btn-P3S {
+    background-image: url(../img/P_03_I.png);
+    background-size: cover;
+}
+
+    .btn-P3S:hover, .btn-P3S.active {
+        background-image: url(../img/P_03_S.png);
+    }
+
+.btn-P4S {
+    background-image: url(../img/P_04_I.png);
+    background-size: cover;
+}
+
+    .btn-P4S:hover, .btn-P4S.active {
+        background-image: url(../img/P_04_S.png);
+    }
+
+.btn-P5S {
+    background-image: url(../img/P_05_I.png);
+    background-size: cover;
+}
+
+    .btn-P5S:hover, .btn-P5S.active {
+        background-image: url(../img/P_05_S.png);
+    }
+
+.btn-P6S {
+    background-image: url(../img/P_06_I.png);
+    background-size: cover;
+}
+
+    .btn-P6S:hover, .btn-P6S.active {
+        background-image: url(../img/P_06_S.png);
+    }
+
+.btn-P7S {
+    background-image: url(../img/P_07_I.png);
+    background-size: cover;
+}
+
+    .btn-P7S:hover, .btn-P7S.active {
+        background-image: url(../img/P_07_S.png);
+    }
+
+
+/**3**/
+
+
+.btn-T1A {
+    background-image: url(../img/T_01_I.png);
+    background-size: cover;
+}
+
+    .btn-T1A:hover, .btn-T1A.active {
+        background-image: url(../img/T_01_A.png);
+    }
+
+.btn-T2A {
+    background-image: url(../img/T_02_I.png);
+    background-size: cover;
+}
+
+    .btn-T2A:hover, .btn-T2A.active {
+        background-image: url(../img/T_02_A.png);
+    }
+
+.btn-T3A {
+    background-image: url(../img/T_03_I.png);
+    background-size: cover;
+}
+
+    .btn-T3A:hover, .btn-T3A.active {
+        background-image: url(../img/T_03_A.png);
+    }
+
+.btn-T4A {
+    background-image: url(../img/T_04_I.png);
+    background-size: cover;
+}
+
+    .btn-T4A:hover, .btn-T4A.active {
+        background-image: url(../img/T_04_A.png);
+    }
+
+.btn-T5A {
+    background-image: url(../img/T_05_I.png);
+    background-size: cover;
+}
+
+    .btn-T5A:hover, .btn-T5A.active {
+        background-image: url(../img/T_05_A.png);
+    }
+
+.btn-T6A {
+    background-image: url(../img/T_06_I.png);
+    background-size: cover;
+}
+
+    .btn-T6A:hover, .btn-T6A.active {
+        background-image: url(../img/T_06_A.png);
+    }
+
+.btn-T7A {
+    background-image: url(../img/T_07_I.png);
+    background-size: cover;
+}
+
+    .btn-T7A:hover, .btn-T7A.active {
+        background-image: url(../img/T_07_A.png);
+    }
+
+.btn-T8A {
+    background-image: url(../img/T_08_I.png);
+    background-size: cover;
+}
+
+    .btn-T8A:hover, .btn-T8A.active {
+        background-image: url(../img/T_08_A.png);
+    }
+
+.btn-T9A {
+    background-image: url(../img/T_09_I.png);
+    background-size: cover;
+}
+
+    .btn-T9A:hover, .btn-T9A.active {
+        background-image: url(../img/T_09_A.png);
+    }
+
+.btn-T10A {
+    background-image: url(../img/T_10_I.png);
+    background-size: cover;
+}
+
+    .btn-T10A:hover, .btn-T10A.active {
+        background-image: url(../img/T_10_A.png);
+    }
+
+.btn-T11A {
+    background-image: url(../img/T_11_I.png);
+    background-size: cover;
+}
+
+    .btn-T11A:hover, .btn-T11A.active {
+        background-image: url(../img/T_11_A.png);
+    }
+
+.btn-T12A {
+    background-image: url(../img/T_12_I.png);
+    background-size: cover;
+}
+
+    .btn-T12A:hover, .btn-T12A.active {
+        background-image: url(../img/T_12_A.png);
+    }
+
+
+.btn-P1A {
+    background-image: url(../img/P_01_I.png);
+    background-size: cover;
+}
+
+    .btn-P1A:hover, .btn-P1A.active {
+        background-image: url(../img/P_01_A.png);
+    }
+
+.btn-P2A {
+    background-image: url(../img/P_02_I.png);
+    background-size: cover;
+}
+
+    .btn-P2A:hover, .btn-P2A.active {
+        background-image: url(../img/P_02_A.png);
+    }
+
+.btn-P3A {
+    background-image: url(../img/P_03_I.png);
+    background-size: cover;
+}
+
+    .btn-P3A:hover, .btn-P3A.active {
+        background-image: url(../img/P_03_A.png);
+    }
+
+.btn-P4A {
+    background-image: url(../img/P_04_I.png);
+    background-size: cover;
+}
+
+    .btn-P4A:hover, .btn-P4A.active {
+        background-image: url(../img/P_04_A.png);
+    }
+
+.btn-P5A {
+    background-image: url(../img/P_05_I.png);
+    background-size: cover;
+}
+
+    .btn-P5A:hover, .btn-P5A.active {
+        background-image: url(../img/P_05_A.png);
+    }
+
+.btn-P6A {
+    background-image: url(../img/P_06_I.png);
+    background-size: cover;
+}
+
+    .btn-P6A:hover, .btn-P6A.active {
+        background-image: url(../img/P_06_A.png);
+    }
+
+.btn-P7A {
+    background-image: url(../img/P_07_I.png);
+    background-size: cover;
+}
+
+    .btn-P7A:hover, .btn-P7A.active {
+        background-image: url(../img/P_07_A.png);
+    }
+
+
+
+
+
+/**AQUI TERMINA**/
+
+
+
+
+.btn-AM {
+    background-image: url(../img/R_AM.png);
+    background-size: cover;
+}
+
+    .btn-AM:hover, .btn-AM.active {
+        background-image: url(../img/R_AM_C.png);
+    }
+
+.btn-A {
+    background-image: url(../img/R_A.png);
+    background-size: cover;
+}
+
+    .btn-A:hover, .btn-A.active {
+        background-image: url(../img/R_A_C.png);
+    }
+
+.btn-ACP {
+    background-image: url(../img/R_ACP.png);
+    background-size: cover;
+}
+
+    .btn-ACP:hover, .btn-ACP.active {
+        background-image: url(../img/R_ACP_C.png);
+    }
+
+.btn-RPP {
+    background-image: url(../img/R_RPP.png);
+    background-size: cover;
+}
+
+    .btn-RPP:hover, .btn-RPP.active {
+        background-image: url(../img/R_RPP_C.png);
+    }
+
+.btn-AJ {
+    background-image: url(../img/R_AJ.png);
+    background-size: cover;
+}
+
+    .btn-AJ:hover, .btn-AJ.active {
+        background-image: url(../img/R_AJ_C.png);
+    }
+
+.btn-RA {
+    background-image: url(../img/R_RA.png);
+    background-size: cover;
+}
+
+    .btn-RA:hover, .btn-RA.active {
+        background-image: url(../img/R_RA_C.png);
+    }
+
+.btn-T {
+    background-image: url(../img/R_T.png);
+    background-size: cover;
+}
+
+    .btn-T:hover, .btn-T.active {
+        background-image: url(../img/R_T_C.png);
+    }
+
+.btn-C {
+    background-image: url(../img/R_C.png);
+    background-size: cover;
+}
+
+    .btn-C:hover, .btn-C.active {
+        background-image: url(../img/R_C_C.png);
+    }
+
+.btn-O-01 {
+    background-image: url(../img/O_01_I.png);
+    background-size: cover;
+}
+
+    .btn-O-01:hover, .btn-O-01.active {
+        background-image: url(../img/O_01_C.png);
+    }
+
+.btn-O-02 {
+    background-image: url(../img/O_02_I.png);
+    background-size: cover;
+}
+
+    .btn-O-02:hover, .btn-O-02.active {
+        background-image: url(../img/O_02_C.png);
+    }
+
+.btn-O-03 {
+    background-image: url(../img/O_03_I.png);
+    background-size: cover;
+}
+
+    .btn-O-03:hover, .btn-O-03.active {
+        background-image: url(../img/O_03_C.png);
+    }
+
+.btn-O-04 {
+    background-image: url(../img/O_04_I.png);
+    background-size: cover;
+}
+
+    .btn-O-04:hover, .btn-O-04.active {
+        background-image: url(../img/O_04_C.png);
+    }
+
+.btn-O-05 {
+    background-image: url(../img/O_05_I.png);
+    background-size: cover;
+}
+
+    .btn-O-05:hover, .btn-O-05.active {
+        background-image: url(../img/O_05_C.png);
+    }
+
+.btn-O-06 {
+    background-image: url(../img/O_06_I.png);
+    background-size: cover;
+}
+
+    .btn-O-06:hover, .btn-O-06.active {
+        background-image: url(../img/O_06_C.png);
+    }
+
+.btn-O-07 {
+    background-image: url(../img/O_07_I.png);
+    background-size: cover;
+}
+
+    .btn-O-07:hover, .btn-O-07.active {
+        background-image: url(../img/O_07_C.png);
+    }
+
+.btn-O-08 {
+    background-image: url(../img/O_08_I.png);
+    background-size: cover;
+}
+
+    .btn-O-08:hover, .btn-O-08.active {
+        background-image: url(../img/O_08_C.png);
+    }
+
+.btn-O-09 {
+    background-image: url(../img/O_09_I.png);
+    background-size: cover;
+}
+
+    .btn-O-09:hover, .btn-O-09.active {
+        background-image: url(../img/O_09_C.png);
+    }
+
+.btn-O-10 {
+    background-image: url(../img/O_10_I.png);
+    background-size: cover;
+}
+
+    .btn-O-10:hover, .btn-O-10.active {
+        background-image: url(../img/O_10_C.png);
+    }
+
+.btn-O-11 {
+    background-image: url(../img/O_11_I.png);
+    background-size: cover;
+}
+
+    .btn-O-11:hover, .btn-O-11.active {
+        background-image: url(../img/O_11_C.png);
+    }
+
+.btn-O-12 {
+    background-image: url(../img/O_12_I.png);
+    background-size: cover;
+}
+
+    .btn-O-12:hover, .btn-O-12.active {
+        background-image: url(../img/O_12_C.png);
+    }
+
+.btn-O-13 {
+    background-image: url(../img/O_13_I.png);
+    background-size: cover;
+}
+
+    .btn-O-13:hover, .btn-O-13.active {
+        background-image: url(../img/O_13_C.png);
+    }
+
+.btn-O-14 {
+    background-image: url(../img/O_14_I.png);
+    background-size: cover;
+}
+
+    .btn-O-14:hover, .btn-O-14.active {
+        background-image: url(../img/O_14_C.png);
+    }
+
+.btn-O-15 {
+    background-image: url(../img/O_15_I.png);
+    background-size: cover;
+}
+
+    .btn-O-15:hover, .btn-O-15.active {
+        background-image: url(../img/O_15_C.png);
+    }
+
+.btn-O-16 {
+    background-image: url(../img/O_16_I.png);
+    background-size: cover;
+}
+
+    .btn-O-16:hover, .btn-O-16.active {
+        background-image: url(../img/O_16_C.png);
+    }
+
+.btn-O-17 {
+    background-image: url(../img/O_17_I.png);
+    background-size: cover;
+}
+
+    .btn-O-17:hover, .btn-O-17.active {
+        background-image: url(../img/O_17_C.png);
+    }
+
+.btn-G-AM {
+    background-image: url('../img/G_AM_I.png');
+    background-size: cover;
+}
+
+    .btn-G-AM:hover, .btn-G-AM.active {
+        background-image: url('../img/G_AM_C.png');
+    }
+
+.btn-G-E {
+    background-image: url('../img/G_E_I.png');
+    background-size: cover;
+}
+
+    .btn-G-E:hover, .btn-G-E.active {
+        background-image: url('../img/G_E_C.png');
+    }
+
+.btn-G-VS {
+    background-image: url('../img/G_VS_I.png');
+    background-size: cover;
+}
+
+    .btn-G-VS:hover, .btn-G-VS.active {
+        background-image: url('../img/G_VS_C.png');
+    }
+
+.btn-G-I {
+    background-image: url('../img/G_I_I.png');
+    background-size: cover;
+}
+
+    .btn-G-I:hover, .btn-G-I.active {
+        background-image: url('../img/G_I_C.png');
+    }
+
+.btn-G-D {
+    background-image: url('../img/G_D_I.png');
+    background-size: cover;
+}
+
+    .btn-G-D:hover, .btn-G-D.active {
+        background-image: url('../img/G_D_C.png');
+    }
+
+.btn-G-LGBTI {
+    background-image: url('../img/G_LGBTI_I.png');
+    background-size: cover;
+}
+
+    .btn-G-LGBTI:hover, .btn-G-LGBTI.active {
+        background-image: url('../img/G_LGBTI_C.png');
+    }
+
+.btn-G-PS {
+    background-image: url('../img/G_PS_I.png');
+    background-size: cover;
+}
+
+    .btn-G-PS:hover, .btn-G-PS.active {
+        background-image: url('../img/G_PS_C.png');
+    }
+
+.btn-G-M {
+    background-image: url('../img/G_M_I.png');
+    background-size: cover;
+}
+
+    .btn-G-M:hover, .btn-G-M.active {
+        background-image: url('../img/G_M_C.png');
+    }
+
+.btn-G-MEL {
+    background-image: url('../img/G_MEL_I.png');
+    background-size: cover;
+}
+
+    .btn-G-MEL:hover, .btn-G-MEL.active {
+        background-image: url('../img/G_MEL_C.png');
+    }
+
+.btn-G-MVH {
+    background-image: url('../img/G_MVH_I.png');
+    background-size: cover;
+}
+
+    .btn-G-MVH:hover, .btn-G-MVH.active {
+        background-image: url('../img/G_MVH_C.png');
+    }
+
+@media screen and (max-width: 600px) {
+    .btncab {
+        font-size: 10px;
+        font-weight: 800;
+    }
+
+    .btncab2 {
+        font-size: 9px;
+        font-weight: 600;
+    }
+}

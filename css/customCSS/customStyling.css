@@ -1,0 +1,156 @@
+﻿body {
+    font-family: 'Work Sans', sans-serif !important;
+}
+
+
+.btn-primary {
+    color: #fff !important;
+    background-color: #358bde !important;
+    border-color: #2179ce !important;
+    width: 200px;
+    border-radius: 25px !important;
+}
+
+.Titles {
+    padding-top:80px;
+    text-align:center;
+    color:#ffffff;
+    font-size: 30px;
+}
+
+.TitlesL2 {
+    padding-top: 40px;
+    text-align: center;
+    color: #ffffff;
+    font-size: 20px;
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary.focus {
+        background-color: #75a9dc !important;
+        border-color: #76b4ef !important;
+        color: #FFFFFF !important;
+}
+
+.Body {
+    width:100%;
+    height: 100vh;
+}
+
+.Header {
+    background: #ffffff;
+    width: 100%;
+    position:absolute;
+}
+
+.BGLoginUNAPS {
+    background: #802981; 
+    width: 33%;
+}
+
+.BGLoginSistemaPen {
+    background: #00987e;
+    width: 33%;
+}
+
+.BGLoginOrganoPen {
+    background: #232d82;
+    width: 33%;
+}
+
+
+.BackHome {
+  position:absolute;
+  color: #ffffff;
+  bottom: 40px;
+  right:30px;
+  font-size: 50px;
+}
+
+
+
+
+.BGIndex {
+    background: #08a5e0;
+    width: 33%;
+}
+
+.logoUNAPS {
+    height: 80px;
+    width: 750px;
+    padding-right: 20px;
+    /*    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;*/
+}
+
+.logoONU {
+    height: 121px;
+    width: 319px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+}
+
+.logoPaloma {
+    width: 80px;
+}
+
+
+.profileIcon {
+    padding-top:100px;
+    text-align:center;
+    cursor:pointer;
+}
+
+.divInputs {
+    padding-top: 30px;
+    text-align: center;
+}
+
+.divButtons {
+    padding-top: 20px;
+    text-align: center;
+}
+
+.divButtonsIndex {
+    padding-top: 75px;
+    text-align: center;
+}
+
+
+.txtUserInputs {
+    border-radius: 25px;
+    border-style:none;
+    height:35px;
+    width:100%;
+}
+
+.txtInputs {
+    border-radius: 25px;
+    border-style:none;
+    height:35px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -350px !important;
+    margin-left: -350px !important;
+}
+
+::placeholder {
+    padding-left: 10px;
+    color: #ccc;
+    font-size: 13px;
+    font-weight:450;
+}
+
+.bigFrame {
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+}

@@ -1,0 +1,299 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+}
+
+
+
+.o-page {
+    width: 1350px;
+    height: 1909.59px;
+
+    display: flex;
+    flex-direction: column;
+
+    background-color: white;
+    
+    /* border: 1px solid red;
+    margin: 0 auto; */
+}
+
+.o-page .m-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 1rem;
+}
+
+.o-page .m-header > .a-image {
+    width: 5.5rem;
+}
+.o-page .m-header > .a-image:first-child {
+    width: 18rem;
+}
+
+.o-page .a-title {
+    font-size: 1.25rem;
+    text-align: center;
+
+    position: relative;
+    right: 40px;
+}
+
+.o-page .m-container {
+    flex: 1;
+    position: relative;
+}
+
+.o-page .a-edge {
+    background-color: #F2620F;
+    position: absolute;
+    width: 4rem;
+
+    left: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.o-page .a-edge p {
+    transform: rotate(-90deg);
+    position: relative;
+    top: 275px;
+    right: 315px;
+    width: 700px;
+    color: #fef0e9;
+    font-weight: 600;
+    font-size: 1rem;
+} 
+.o-page .a-foot {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    padding: 2rem;
+}
+
+.o-page .o-content {
+    height: 100%;
+    background-color: #F5F3F1;
+}
+.o-page .o-content > div:not(:first-child) {
+    padding: 0 10rem;
+}
+
+.o-page .o-content h2 {
+    padding: 2rem 10rem 1rem 10rem;
+    font-size: 1.25rem;
+}
+
+.o-content {
+    font-size: 1.25rem;
+    text-align: justify;
+}
+.o-content .m-jumbotron {
+    height: 25%;
+    background-color: #F2620F;
+    background-image: url("./../assets/Quienes.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.o-content .m-text {
+    margin-top: 4rem;
+}
+
+.o-content .m-divider {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.o-content .a-list {
+    flex: 1;
+    padding-left: 8rem;
+}
+.o-content .a-image {
+    width: 400px;
+}
+
+.o-content .m-basic-information-grid {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr 2.5fr;
+    grid-template-rows: repeat(4, 1fr);
+}
+.o-content .m-basic-information-grid > span:nth-child(odd) {
+    background-color: #F2620F;
+    padding: 0.5rem 1rem;
+    color: #F5F3F1;
+}
+.o-content .m-basic-information-grid > span:nth-child(even) {
+    background-color: #E6E7E8;
+    padding: 0.5rem 1rem;
+}
+
+.o-content .m-flex {
+    display: flex;
+    justify-content: center;
+    margin-top: 4rem;
+}
+.o-content .m-flex > div {
+    flex: 1;
+}
+.o-content .m-flex > div:first-child {
+    margin-right: 1rem;
+}
+.o-content .m-flex > div > div:first-child {
+    background-color: #F2620F;
+    padding: 1rem;
+    color:  #F5F3F1;
+    text-align: center;
+}
+.o-content .m-flex > div > div:last-child {
+    background-color: #FABBBD;
+    padding: 2rem;
+    color:  #332B2C;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: 6rem;
+
+    font-weight: 600;
+    font-size: 1.75rem;
+}
+.o-content .m-flex > div > div:last-child > p:last-child {
+    font-size: 1rem;
+}
+
+
+.o-section {
+    margin: 2rem 0rem;
+    margin-top: 0;
+    background-color: #E0DCD6;
+    padding: 1rem 2rem;
+}
+.o-section .m-title {
+    font-size: 1.125rem;
+    padding-bottom: 0.25rem;
+}
+.o-section {
+    margin: 2rem 0rem;
+    margin-top: 0;
+    background-color: #E0DCD6;
+    padding: 1rem 2rem;
+}
+.o-section .m-container {
+    margin-top: 0.5rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+}
+.o-section .m-container.-two-columns {
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+}
+.o-section .m-container.-one-column {
+    grid-template-columns: initial;
+}
+
+.o-section .a-card {
+    background-color: red;
+}
+
+
+/* Cards */
+.o-card > div {
+    padding: 1rem;
+    text-align: center;
+}
+.o-card.-reverse {
+    display: flex;
+}
+.o-card.-reverse > .m-content {
+    flex: 0.5;
+}
+.o-card.-reverse .m-title {
+    height: 100%; 
+    flex: 1;
+}
+.o-card.-one-line {
+    display: flex;
+}
+.o-card.-one-line > div {
+    flex: 1;
+    height: 100%;
+}
+.o-card .m-type {
+    background-color: #989898;
+    color: white;
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+
+.o-card .m-title {
+    padding: 0 0.5rem;
+    color: #f3f3f3;
+    background-color: #808080;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+.o-card .m-title img {
+    width: 2.75rem;
+    margin-right: 0.5rem;
+}
+.o-card .m-content {
+    color: white;
+    background-color: #FABBBD;
+    color: black;
+    font-weight: 600;
+    font-size: 1.25rem;;
+}
+.o-card.-text-start .m-title {
+    text-align: start;
+    justify-content: flex-start;
+    font-size: 0.75rem;
+    padding: 0 0.5rem;
+}
+.o-card.-title-white .m-title {
+    background-color: white;
+    color: #a6a6a6;
+}
+.o-card.-title-bold .m-title {
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+}
+.o-card.-one-line > .m-title {
+    flex: 6;
+    font-size: 0.80rem;
+}
+
+.o-card.-title-green .m-title, .o-card.-title-green .m-type {
+    background-color: #47AF37;
+}
+.o-card.-title-blue .m-title, .o-card.-title-blue .m-type {
+    background-color: #0088CF;
+}
+.o-card.-title-purple .m-title, .o-card.-title-purple .m-type {
+    background-color: #812E8C;
+}
+.o-card.-one-line > .m-title {
+    background-color: #989898;
+}
+
+.-bg-green {
+    background-color: #C7DFBF !important;
+}

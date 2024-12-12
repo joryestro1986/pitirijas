@@ -1,0 +1,621 @@
+/* 
+  GENERAL STYLES
+*/
+*, *::after, *::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: #f3f2f0;
+}
+
+/* Remove trial */
+text[href="http://simplemaps.com"] {
+  display: none !important;
+}
+
+
+/* 
+ *  CONTAINER STYLES
+ */
+
+#map {
+  position: relative;
+}
+
+.container {
+  width: 900px;
+  margin: 0 auto;
+}
+
+.map-container #map {
+  margin: 0 auto;
+}
+
+#tt_sm_map {
+  z-index: 10000 !important;
+}
+
+
+/* 
+ *  CHART STYLES
+ */
+#map .chart {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 1000;
+  width: 10rem;
+  height: 10rem;
+}
+
+#map .chart #doughnut-chart {
+  width: 100%;
+  height: 100%;
+}
+
+#map .chart > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#map .chart .chart-title {
+  position: absolute;
+  font-size: 0.75rem;
+}
+
+/* 
+ *  SECTION CONTROLS STYLES
+ */
+
+section .controls {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+ 
+  margin: 2rem 0;
+}
+
+section .controls .controls-help {
+  width: 2rem;
+  height: 2rem;
+  line-height: 2rem;
+  text-align: center;
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+  background-color: #0B438C;
+  border-radius: 100%;
+}
+
+section .controls select {
+  max-width: 400px;
+  padding: 0.25rem 0.5rem;
+  margin-right: 0.75rem;
+  border: none;
+  cursor: pointer;
+
+  border-radius: 1rem;
+  
+  outline: none;
+}
+
+section .controls option {
+  background-color: #0B438C;
+  color: white;
+}
+
+section .controls select::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+section .controls select::-webkit-scrollbar-track {
+  border: none;
+  background-color: #0B438C;
+}
+
+section .controls select::-webkit-scrollbar-thumb {
+  background-color: #3677ef;
+  border-radius: 1rem;
+}
+
+section .controls span {
+  align-self: flex-end;
+}
+
+
+/* 
+ *  SECTION LEGENDS STYLES
+ */
+
+.legends {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.legends > span {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+}
+
+.legends span .color {
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-right: 0.5rem;
+
+  display: inline-flex;
+  border-radius: 10rem;
+}
+
+.legends span:nth-child(1) .color {
+background-color: #4DBF3B;
+}
+
+.legends span:nth-child(2) .color {
+  background-color: #F83527;
+}
+
+.legends span:nth-child(3) .color {
+  background-color: #FC541F;
+}
+
+.legends span:nth-child(4) .color {
+  background-color: #000;
+}
+#tt_sm_map .tt_sm > div:first-child {
+  display: none !important;
+}
+
+
+/* 
+ *  POP-UP STYLES
+ */
+.pop-up {
+  min-width: 20rem;
+  max-width: 32rem;
+  border: 2px solid #0B438C;
+  background-color: #f7f7f7;
+}
+
+.pop-up div {
+  width: 100%;
+}
+
+.pop-up .section {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: stretch;
+}
+
+.pop-up .section .title {
+  background-color: #0B438C;
+  color: white;
+  padding: 0.4rem 0.65rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.pop-up .section .content .info:not(.flex-container) {
+  padding: 0.25rem 0.5rem;
+}
+
+.pop-up .section .content {
+  display: flex;
+  min-height: 4rem;
+}
+
+.pop-up .section .content div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pop-up .section .content > div:first-child {
+  flex-basis: 8.25rem;
+  border-right: 2px solid #0B438C;
+}
+
+.pop-up .section .content .info {
+  font-size: 0.85rem;
+  font-weight: 600;
+  /* padding: 0.25rem 0.5rem; */
+}
+
+.pop-up .section:first-child .content {
+  color: #FC541F;
+}
+
+.section:last-child .info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.pop-up .section:last-child .content .info > div {
+  font-weight: 500;
+}
+
+.section .content .icon > img {
+  width: 65%;
+}
+
+.pop-up .section:last-child .content {
+  color: black;
+  margin-bottom: 0.25rem;
+}
+
+.svg-icon, .svg-icon image {
+  width: 2.25rem;
+  height: 2.25rem;
+  margin-bottom: 0.25rem;
+}
+
+.color-status-4 {
+  color: #4DBF3B;
+}
+  
+.color-status-3 {
+  color: #F83527;
+}
+  
+.color-status-2 {
+  color: #FC541F;
+}
+  
+.pop-up .section .flex-container {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+}
+
+.pop-up .section .flex-container div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+ 
+.pop-up .section .flex-container > div:first-child {
+  border-left: 2px solid #0B438C;
+  height: 100%;
+}
+
+.pop-up .section .flex-container .progress {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.pdf {
+    /* Aspect ratio 1.414 */
+    width: 1080px;
+    height: 1527.12px;
+    position: relative;
+    display: flex;
+    /* Borrar */
+    /* border: 1px solid black; */
+    margin: 0 auto;
+}
+
+    .pdf .page-information {
+        width: 5%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        font-weight: 600;
+        color: white;
+    }
+
+    .pdf .reverse {
+        left: initial;
+        right: 0;
+    }
+
+    .pdf .page-information .top {
+        padding: 1.5rem 0;
+    }
+
+    .pdf .page-information .bottom {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding: 0 0 1.5rem 0;
+    }
+
+        .pdf .page-information .bottom span:first-child {
+            transform: rotate(270deg);
+            position: relative;
+            top: 100px;
+        }
+
+    .pdf .reverse .bottom span:first-child {
+        transform: rotate(90deg);
+        position: relative;
+        top: 100px;
+    }
+
+    .pdf .page-content {
+        width: 100%;
+        flex: 1;
+        margin: 2rem 0;
+        display: flex;
+        justify-content: center;
+    }
+
+        .pdf .page-content .container {
+            width: 86%;
+            padding: 1.75rem;
+            display: grid;
+            grid-template-columns: 1.25fr 3fr 1fr;
+            grid-template-rows: 150px 1fr;
+            font-weight: 700;
+            grid-template-areas: "header header asideTwo" "asideOne content asideTwo"
+        }
+
+    .pdf p, .pdf ul {
+        font-weight: 400;
+    }
+
+    .pdf .page-content .header {
+        grid-area: header;
+        border-bottom: 2px solid #B9B7B8;
+        display: flex;
+        align-items: flex-end;
+        font-size: 1.5rem;
+        padding: 0 2rem 1rem 0;
+    }
+
+    .pdf .page-content .asideOne {
+        grid-area: asideOne;
+        border-right: 2px solid #B9B7B8;
+        display: flex;
+        flex-direction: column;
+    }
+
+        .pdf .page-content .asideOne > div {
+            padding-top: 1rem;
+            padding-right: 1rem;
+            font-size: 1rem;
+        }
+
+    .pdf .page-content img {
+        width: 60px;
+    }
+
+    .pdf .page-content .asideOne span + div {
+        display: flex;
+    }
+
+    .pdf .page-content .asideOne ul {
+        list-style: none;
+    }
+
+    .pdf .page-content .asideOne li {
+        font-weight: 500;
+        padding-left: 0.25rem;
+    }
+
+    .pdf .page-content .image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .pdf .image img {
+        width: 150px;
+    }
+
+    .pdf .asideOne > div:first-child {
+        flex: 1;
+    }
+
+    .pdf .asideOne > div:not(:first-child) {
+        flex-basis: 200px;
+        font-size: 0.85rem;
+    }
+
+    .pdf .aside > div:not(:last-child) {
+        border-bottom: 2px solid #B9B7B8;
+    }
+
+    .pdf .asideTwo {
+        grid-area: asideTwo;
+        border-left: 2px solid #B9B7B8;
+    }
+
+    .pdf .content {
+        grid-area: content;
+        display: flex;
+        flex-direction: column;
+    }
+
+        .pdf .content > div {
+            padding: 1rem 2rem;
+        }
+
+            .pdf .content > div:last-child {
+                border-top: 2px solid #B9B7B8;
+            }
+
+            .pdf .content > div > .title {
+                position: relative;
+                right: 15px;
+            }
+
+        .pdf .content .pratices > div {
+            height: 100%;
+        }
+
+    .pdf .page-content .elements {
+        flex: 1;
+        display: flex;
+        padding: 0;
+    }
+
+    .pdf .elements > div {
+        padding: 1rem;
+    }
+
+    .pdf .elements > div {
+        flex: 1;
+    }
+
+        .pdf .elements > div:nth-child(even) {
+            background-color: #E6E7E9;
+        }
+
+    .pdf .content .pratices > div:last-child {
+        background-color: #B9B7B8;
+    }
+
+    .pdf .elements > div ul {
+        list-style: square inside;
+    }
+
+        .pdf .elements > div ul li > ul {
+            list-style: circle inside;
+            padding-left: 1rem;
+        }
+
+    .pdf .page-content .view-2 {
+        display: initial;
+        width: 85%;
+    }
+
+        .pdf .page-content .view-2 .content-page {
+            height: 100%;
+        }
+
+        .pdf .page-content .view-2 .elements {
+            height: 100%;
+        }
+
+.remove-list-style {
+    list-style: none;
+}
+
+.asideTwo > div {
+    padding-left: 1.5rem;
+}
+
+.pdf .asideTwo > div:first-child > div:first-child {
+    background-color: #4CB848;
+    padding: 1.25rem 1rem;
+    font-size: 1.5rem;
+    color: white;
+    text-align: center;
+    margin-bottom: 1.25rem;
+}
+
+.pdf .asideTwo > div:last-child > div {
+    margin-top: 1rem;
+}
+
+.pdf .asideTwo span {
+    font-size: 0.85rem;
+    font-weight: 700;
+}
+
+.pdf .asideTwo {
+    display: flex;
+    flex-direction: column;
+}
+
+    .pdf .asideTwo > div:first-child {
+        flex: 1;
+    }
+
+    .pdf .asideTwo > div:last-child {
+        flex: 1;
+    }
+
+/* Types */
+.pdf .title {
+    color: #F25922;
+}
+
+
+/* Themes */
+
+.pdf .reinsercion-social {
+    color: #802990;
+}
+
+.reinsercion-social .header {
+    color: #802990;
+}
+
+.reinsercion-social .page-information .bottom {
+    background-color: #802990;
+}
+
+.reinsercion-social .page-content .container {
+    border-top: 2px solid #802990;
+    border-bottom: 2px solid #802990;
+}
+
+.reinsercion-social .asideTwo > div:first-child > div:first-child {
+    background-color: #802990;
+}
+
+
+.pdf .justicia {
+    color: #0095D9;
+}
+
+.justicia .header {
+    color: #0095D9;
+}
+
+.justicia .page-information .bottom {
+    background-color: #0095D9;
+}
+
+.justicia .page-content .container {
+    border-top: 2px solid #0095D9;
+    border-bottom: 2px solid #0095D9;
+}
+
+.justicia .asideTwo > div:first-child > div:first-child {
+    background-color: #0095D9;
+}
+
+
+.pdf .gobernabilidad {
+    color: #4CB848;
+}
+
+.gobernabilidad .header {
+    color: #4CB848;
+}
+
+.gobernabilidad .page-information .bottom {
+    background-color: #4CB848;
+}
+
+.gobernabilidad .page-content .container {
+    border-top: 2px solid #4CB848;
+    border-bottom: 2px solid #4CB848;
+}
+
+.gobernabilidad .asideTwo > div:first-child > div:first-child {
+    background-color: #4CB848;
+}

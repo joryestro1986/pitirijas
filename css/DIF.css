@@ -1,0 +1,572 @@
+﻿/*MAPA*/
+
+.mapadiv {
+    width: 60% !important;
+    margin: auto;
+    padding-left: 15%;
+}
+
+.mapadiv path {
+        fill: #e8dbe9;
+        stroke: #a93bb2;
+        stroke-width: 30px;
+}
+
+.mapadiv :hover {
+        fill: #a93bb2;
+}
+
+.pop-up {
+    width: 13rem;
+    border: 2px solid #e12483;
+    background-color: white;
+    position: absolute;
+}
+
+
+.pop-up .section {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: stretch;
+}
+
+    .pop-up .section .content {
+        display: flex;
+        min-height: 2rem;
+    }
+
+        .pop-up .section .content div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+            .pop-up .section .content div:first-child {
+                /*  flex-basis: 45%;*/
+                border-right: 2px solid #e12483;
+            }
+
+    .pop-up div {
+        width: 100%;
+    }
+
+    .pop-up .section .title {
+        background-color: #e12483;
+        color: white;
+        padding: 0.4rem 0.65rem;
+        font-size: 0.75rem;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+
+    .pop-up .section .title2 {
+        background-color: #e12483;
+        color: white;
+        padding: 0.4rem 0.65rem;
+        font-size: 0.75rem;
+        font-weight: 700;
+    }
+
+
+
+.Outer {
+   /*border:solid 1px red;*/
+   padding-top: 20px;
+}
+
+.btnMenu.active {
+    background-color: #b88b48;
+    color: white !important;
+}
+
+.btncab {
+    font-size: 15px;
+    font-weight: 800;
+}
+
+a {
+    color: #fff !important;
+    text-decoration: none !important;
+}
+
+.combosFechas {
+    background-color: #FFFFFF !important;
+    background-image: none !important;
+    border: 1px solid #e5e6e7 !important;
+    border-radius: 1px !important;
+    color: inherit !important;
+    display: block !important;
+    padding: 6px 12px !important;
+    transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s !important;
+    width: 100% !important;
+}
+
+
+    .btn-gray {
+        background-color: transparent !important;
+        color: #808080 !important;
+        border-color: #808080 !important;
+    }
+
+    .btn-gray:hover, .btn-gray.active {
+        background-color: #808080 !important;
+        color: white !important;
+        border-color: #808080 !important;
+    }
+
+
+.btn-orange {
+    background-color: transparent;
+    color: #f75675 !important;
+    border-color: #f75675 !important;
+}
+
+    .btn-orange:hover, .btn-orange.active {
+        background-color: #f75675 !important;
+        color: white !important;
+        border-color: #f75675 !important;
+    }
+
+/*GRID*/
+.page-item.active .page-link {
+    color: #fff !important;
+    background-color: #b88b48 !important;
+    border-color: #634908 !important;
+}
+
+.btn-primary {
+    color: #fff !important;
+    background-color: #b88b48 !important;
+    border-color: #634908 !important;
+}
+
+.pagination > li > a, .pagination > li > span {
+    background-color: #FFFFFF !important;
+    border: 1px solid #DDDDDD !important;
+    color: #808080 !important;
+    float: left !important;
+    line-height: 1.42857 !important;
+    margin-left: -1px !important;
+    padding: 4px 10px !important;
+    position: relative !important;
+    text-decoration: none !important;
+}
+
+
+/*COMBOS*/
+.select2-container--bootstrap4.select2-container--focus .select2-selection {
+    box-shadow: none !important;
+    border-color: #b88b48 !important;
+}
+
+.select2-container--bootstrap4 .select2-results__option--highlighted,
+.select2-container--bootstrap4 .select2-results__option--highlighted.select2-results__option[aria-selected=true] {
+    background-color: #b88b48 !important;
+}
+
+/*PROGRESO*/
+.pace .pace-progress {
+    background-color: #b88b48 !important;
+}
+
+
+/*LOGOS*/
+.img {
+    vertical-align: middle !important;
+    border-style: none !important;
+}
+
+.img-container, .img-preview {
+    overflow: hidden !important;
+    text-align: center !important;
+    width: 100% !important;
+}
+
+/*VENTANA MODAL*/
+.modal-dialog {
+    max-width: 500px !important;
+    margin: 1.75rem auto !important;
+}
+
+.frameDetHW {
+    height: 450px;
+    width: 450px;
+}
+
+/* G R A F I C A */
+.lineWrapper {
+/*    height: 550px !important;*/
+    width: 70% !important;
+    top:0;
+    bottom:0;
+    left:0;
+    right: 0;
+    margin:auto;
+
+}
+
+
+/*D A S H B O A R D*/
+
+.BodyDashboard {
+    font-family: Calibri;
+}
+
+.HeaderDashboard {
+    height: 80px;
+    width: 100%;
+    color: #fff;
+    font-size: 40px;
+    background-color: #67519c;
+    display: table;
+    text-align: center;
+}
+
+.PoblacionDashboard {
+    display:flex;
+    width:100%;
+}
+
+.EducacionTerapia {
+    padding-top:40px;
+    display: table;
+    width: 100%;
+}
+
+.IconosHM {
+    font-size: 70px;
+    color: #b898c9;
+}
+
+.Educacion {
+    font-size: 70px;
+    color: #67519c;
+    padding-left: 75px;
+}
+
+.IconosResidencia {
+    font-size: 70px;
+    color: #b898c9;
+    vertical-align:middle;
+}
+
+.bigPurpleFont {
+    font-size: 25px;
+    font-weight: bold;
+    color: #67519c;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.porcentajeP {
+    font-size: 15px;
+}
+
+.boldFont {
+    font-weight: bold;
+    /*    display: table-cell;*/
+    vertical-align: middle;
+    font-size: 25px;
+}
+
+.boldFontEM {
+    font-weight: bold;
+/*    display: table-cell;*/
+    vertical-align: middle;
+    font-size: 25px;
+}
+
+.bigPurpleFontEM {
+    font-size: 30px;
+    font-weight: bold;
+    color: #67519c;
+}
+
+.campColor1 {
+    width: 15%;
+    text-align: center;
+    background-color: #b898c9;
+    font-size: 40px;
+    color: #fff;
+}
+
+.campamentoIMG {
+    font-size: 150px;
+}
+
+.IconosCamp {
+    font-size: 150px;
+    color: #b898c9;
+}
+
+.campColor2 {
+    width: 15%;
+    text-align: center;
+    background-color: #67519c;
+    font-size:40px;
+    color:#fff;
+}
+
+.bigPurpleFontCamp {
+    font-size: 30px;
+    font-weight: bold;
+    color: #67519c;
+    text-align:center;
+}
+
+.poblacionSM {
+    vertical-align: middle;
+    font-size: 25px;
+}
+
+.PobSMPorc {
+    width: 40%
+}
+
+.textMobilePob {
+    display:none;
+}
+
+
+/*D I S P O S I T I V O S   M O B I L E S*/
+@media (min-width: 200px) and (max-width: 700px) {
+
+    .mapadiv {
+        margin-left: -85% !important;
+    }
+
+/*    svg {
+        stroke-width: 400px !important;
+    }*/
+
+
+    .combosFechas {
+        background-color: #FFFFFF !important;
+        background-image: none !important;
+        border: 1px solid #e5e6e7 !important;
+        border-radius: 1px !important;
+        color: inherit !important;
+        display: block !important;
+        padding: 6px 12px !important;
+        transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s !important;
+        width: 100% !important;
+    }
+
+
+    .img {
+            vertical-align: middle !important;
+            border-style: none !important;
+        }
+
+        .img-container, .img-preview {
+            overflow: hidden !important;
+            text-align: center !important;
+            width: 105px !important;
+            height: 70px !important;
+        }
+
+        canvas {
+            margin: 0 auto;
+            height: 130px !important;
+        }
+
+        /*VENTANA MODAL*/
+        .modal-dialog {
+            max-width: 300px !important;
+            margin: 1.75rem auto !important;
+        }
+
+        .frameDetHW {
+            height: 350px;
+            width: 240px;
+        }
+
+        /*D  A  S  H  B  O  A  R  D*/
+
+        .HeaderDashboard {
+            height: 40px;
+            width: 100%;
+            color: #fff;
+            font-size: 3vh;
+            background-color: #67519c;
+            display: table;
+            text-align: center;
+        }
+
+        .bigPurpleFont {
+            font-size: 1vh;
+            font-weight: bold;
+            color: #67519c;
+            display: table-cell;
+            vertical-align: middle;
+        }
+
+        .bigPurpleFontEM {
+            font-size: 1vh;
+            font-weight: bold;
+            color: #67519c;
+        }
+
+        .poblacionSM {
+            vertical-align: middle;
+            font-size: 0.8vh;
+            font-weight: bold;
+        }
+
+        .poblacionEM {
+            vertical-align: middle;
+            font-size: 0.8vh;
+            font-weight: bold;
+            text-align:justify;
+        }
+
+        .poblacionCamp {
+            vertical-align: middle;
+            font-size: 0.8vh;
+            font-weight: bold;
+            text-align: justify;
+            display: none;
+        }
+
+    .boldFont {
+        font-weight: bold;
+        /*            display: table-cell;*/
+        vertical-align: middle;
+        font-size: 1vh;
+    }
+
+        .boldFontEM {
+            font-weight: bold;
+/*            display: table-cell;*/
+            vertical-align: middle;
+            font-size: 1vh;
+        }
+
+        .IconosHM {
+            font-size: 5vh;
+            color: #b898c9;
+        }
+
+        .IconosResidencia {
+            font-size: 5vh;
+            color: #b898c9;
+            vertical-align: middle;
+        }
+
+    .IconosCamp {
+        font-size: 5vh;
+        color: #b898c9;
+    }
+
+    .porcentajeP {
+        font-size: 1vh;
+        vertical-align: middle;
+    }
+
+    .campColor1 {
+        width: 15%;
+        text-align: center;
+        background-color: #b898c9;
+        font-size: 2vh;
+        color: #fff;
+    }
+
+    .campColor2 {
+        width: 15%;
+        text-align: center;
+        background-color: #67519c;
+        font-size: 2vh;
+        color: #fff;
+    }
+
+    .bigPurpleFontCamp {
+        font-size: 2vh;
+        font-weight: bold;
+        color: #67519c;
+        text-align: center;
+    }
+
+    .PobSMPorc {
+        width:30%;
+        display:none;
+        
+    }
+
+    .textMobilePob {
+        display: block;
+        width: 100%;
+        font-size: 10px;
+        font-weight:bold;
+        text-align:left;
+    }
+
+    /* G R A F I C A */
+    .lineWrapper {
+        height: 140px !important;
+        width: 100% !important;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+
+    select {
+      width: 100%;
+    }
+
+    .row {
+        display: -ms-flexbox !important;
+        display: flex !important;
+        -ms-flex-wrap: wrap !important;
+        flex-wrap: wrap !important;
+        margin-right: 2px !important;
+        margin-left: 2px !important;
+    }
+
+ }
+
+@media (min-width: 750px) and (max-width: 1000px) {
+    .combosFechas {
+        background-color: #FFFFFF !important;
+        background-image: none !important;
+        border: 1px solid #e5e6e7 !important;
+        border-radius: 1px !important;
+        color: inherit !important;
+        display: block !important;
+        padding: 6px 12px !important;
+        transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s !important;
+        width: 150px !important;
+    }
+
+    select {
+        width: 90%;
+    }
+
+    .rowFullScreen {
+        display: -ms-flexbox !important;
+        display: flex !important;
+        -ms-flex-wrap: wrap !important;
+        flex-wrap: wrap !important;
+        margin-right: 30px !important;
+        margin-left: 47px !important;
+    }
+
+
+}
+
+@media (min-width: 1100px) {
+    select {
+        width: 50%;
+    }
+
+    .rowFullScreen {
+        display: -ms-flexbox !important;
+        display: flex !important;
+        -ms-flex-wrap: wrap !important;
+        flex-wrap: wrap !important;
+        margin-right: -50px !important;
+        margin-left: 100px !important;
+    }
+
+}

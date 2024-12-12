@@ -1,0 +1,447 @@
+
+*, *::after, *::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: sans-serif;
+}
+
+.page {
+    /* Aspect ratio 1.414 */
+    margin: 0 auto;
+    width: 1350px;
+    padding: 2.5rem 5rem;
+}
+
+.container-two {
+    width: 1350px;
+}
+
+/* 
+ Inputs 
+ */
+.input {
+    min-height: 2.5rem;
+    display: flex;
+    margin: 1rem 0 ;
+}
+.input > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+}
+.input > .label {
+    background-color: #ED7D31;
+    border-radius: 0.5rem 0 0 0.5rem;
+    color: white;
+    flex: 1;
+}
+.input > .value {
+    border: 1px solid #002060;
+    background-color: white;
+    border-radius: 0 0.5rem 0.5rem 0;
+    color: #7F7F7F;
+    flex: 3;
+}
+
+/*
+ Inputs Col
+*/
+.input-col {
+    width: 100%;
+    display: flex;
+    margin: 1rem 0;
+    flex-direction: column;
+    min-height: 4rem;
+}
+.input-col > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0.5rem;
+}
+.input-col > .label {
+    background-color: #7F7F7F;
+    border-radius: 0.5rem 0.5rem 0 0;
+    color: white;
+    flex-basis: 3.25rem;
+}
+.input-col > .value {
+    flex: 1;
+    border: 1px solid #002060;
+    background-color: white;
+    border-radius: 0 0 0.5rem 0.5rem;
+    color: #7F7F7F;
+    padding: 1rem;
+}
+
+/* 
+ Container
+*/
+.container {
+    background-color: #F2F2F2;
+    border: 1px solid #7F7F7F;
+    border-radius: 1rem;
+    padding: 1rem 2rem;
+}
+.container > h2 {
+    margin: 0;
+    text-align: center;
+    color: #7F7F7F;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+/* 
+ Inputs group col 
+*/
+.inputs-group-row {
+    display: flex;
+    margin: 1rem 0;
+}
+.inputs-group-row > div {
+    margin: 0 1rem;
+}
+.inputs-group-row > div:first-child {
+    margin: 0 1rem 0 0;
+}
+.inputs-group-row > div:last-child {
+    margin: 0 0 0 1rem;
+}
+
+/* 
+ Inputs Columns
+*/
+.inputs-columns {
+    display: flex;
+}
+.inputs-columns > div {
+    flex: 1;
+    padding: 0 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.inputs-columns > div > h3{
+    text-align: center;
+    font-size: 1rem;
+    color: #843C0C;
+    font-weight: 700;
+}
+
+/*
+    Grid Inputs
+*/
+.grid-inputs {
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr;
+    grid-template-rows: repeat(12, 1fr);
+
+    grid-gap: 1rem;
+}
+
+.grid-inputs .input-grid:not(:nth-child(1)) {
+    background-color: #002060;
+    padding: 0.75rem;
+    color: white;
+    border-radius: 0.5rem;
+    text-align: center;
+    margin: 0 4rem;
+}
+.grid-inputs .input-exists-grid:not(:nth-child(2)) {
+    background-color: white;
+    border: 1px solid #7F7F7F;
+    color: #7F7F7F;
+    margin: 0 2rem;
+    padding: 0.75rem;
+    border-radius: 0.5rem;
+    text-align: center;
+}
+.grid-inputs .input-quantity-grid:not(:nth-child(3)) {
+    background-color: white;
+    border: 1px solid #7F7F7F;
+    padding: 0.75rem;
+    color: #7F7F7F;
+    margin: 0 2rem;
+    border-radius: 0.5rem;
+    text-align: center;
+}
+
+.input-grid-red {
+    background-color: #FFCCCC !important;
+}
+
+.input-grid-green {
+    background-color: #A9D18E !important;
+}
+
+.grid-inputs .top {
+    display: flex;
+    justify-content: center;
+    /* position: relative; */
+    /* bottom: -30px; */
+    font-weight: 600;
+    color: #002060;
+}
+.page .container .inputs-columns .input-col-multiple .value-select {
+    background-color: #C5E0B4;
+}
+
+
+
+/* Page One */
+.page-one > h1 {
+    text-align: center;
+    color: #002060;
+}
+.page-one > .input .label {
+    border-radius: 0;
+}
+.page-one > .input .value {
+    border-radius: 0;
+}
+
+.page-one > .container > .input .value {
+    justify-content: flex-start;
+}
+
+.page-one .container .input .label {
+    background-color: #7F7F7F;
+}
+
+.page-one .container .inputs-group-row > .input-col:last-child .value {
+    background-color: #A9D18E;
+    color: white;
+}
+
+
+/* Page Two */
+.page-two > .container {
+    background-color: #FBE5D6;
+}
+
+.page-two .input > .label {
+    background-color: #C55A11;
+}
+
+.page-two > .container > .input .value {
+    justify-content: flex-start;
+}
+
+.page-two .container > .inputs-group-row:last-child .input {
+    width: 100%;
+}
+.page-two .container > .inputs-group-row:last-child .input .value {
+    flex: 1;
+}
+
+
+/* Page Three */
+.page-three > .container {
+    background-color: #DEEBF7;
+}
+
+.page-three .input > .label {
+    background-color: #002060;
+}
+
+.page-three > .container > .input .value {
+    justify-content: flex-start;
+}
+
+.page-three .container > h2:not(:first-child) {
+    text-align: start;
+    color: #002060;
+    position: relative;
+    bottom: -0.5rem;
+}
+
+.page-three .container .input .value {
+    flex: 1;
+}
+
+
+/* Page Four */
+.page-four > h1 {
+    text-align: center;
+    color: #002060;
+}
+.page-four > .input .label {
+    border-radius: 0;
+    background-color: #5B9BD5;
+}
+.page-four > .input .value {
+    border-radius: 0;
+
+}
+
+.page-four > .container > .input .value {
+    justify-content: flex-start;
+}
+
+.page-four .container .input .label {
+    background-color: #7F7F7F;
+}
+
+.page-four .container .inputs-group-row > .input-col:last-child .value {
+    background-color: #FF7C80;
+    color: white;
+}
+
+/* Page Five */
+.page-five > .container {
+    background-color: #FBE5D6;
+}
+
+.page-five .input > .label {
+    background-color: #C55A11;
+}
+
+.page-five > .container > .input .value {
+    justify-content: flex-start;
+}
+
+.page-five .container > .inputs-group-row .input .label {
+    justify-content: center;
+    text-align: center;
+}
+.page-five .container > .inputs-group-row .input .value {
+    flex: 0.5;
+}
+
+.page-five .container > .inputs-columns .input .value {
+    flex: 0.5;
+}
+.page-five .container > .inputs-columns {
+    margin-top: 3rem;
+}
+.page-five .container > .inputs-columns > div:nth-child(even) {
+    align-items: center;
+}
+.page-five .container > .inputs-columns .input-col {
+    width: 60%;
+}
+.page-five .container > .inputs-columns .input-col .label {
+    background-color: #C55A11;
+}
+
+/* Page Six */
+.page-six > .container {
+    background-color: #DEEBF7;
+}
+
+.page-six .input > .label {
+    background-color: #002060;
+}
+
+.page-six > .container > .input .value {
+    justify-content: flex-start;
+}
+
+.page-six .container > .inputs-columns h3 {
+    color: #002060;
+}
+
+.page-six .input > .label {
+    flex: 10;
+}
+
+.page-six .inputs-columns {
+    margin-top: 2rem;
+}
+.page-six .inputs-group-row > .input {
+    flex: 1;
+}
+
+
+/* Page Seven */
+.page-seven > .container {
+    background-color: #DEEBF7;
+}
+
+/* Page Height */
+.page-height > .container {
+    background-color: #FFF2CC;
+}
+.page-height .input > .label {
+    background-color: #BF9000;
+}
+.page-height .input-col > .label {
+    background-color: #BF9000;
+}
+.page-height .container .input-col-multiple > .value:not(:last-child) {
+    border-radius: 0;
+}
+.page-height .container .input-col-multiple > .value {
+    border-top: 0;
+    background-color: #E7E6E6;
+}
+.page-height .input-col-two-values .value {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0;
+}
+.page-height .input-col-two-values .value > div {
+    flex: 1;
+    padding: 1rem 0;
+}
+.page-height .input-col-two-values .value > div:first-child {
+    border-right: 1px solid black;
+}
+
+
+/* Page Nine */
+.page-nine > .container {
+    background-color: #FFF2CC;
+}
+.page-nine .input > .label {
+    background-color: #BF9000;
+}
+.page-nine .input-col > .label {
+    background-color: #BF9000;
+}
+.page-nine .grid-columns {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: 2fr 1fr 2fr 1fr;
+    grid-template-rows: repeat(9, 1fr);
+
+    margin-top: 2rem;
+}
+.page-nine .grid-columns .label-grid {
+    background-color: #BF9000;
+    color: white;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.page-nine .grid-columns .value-grid {
+    background-color: white;
+    border: 1px solid #7F7F7F;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.wrap-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.inputs-group-row > .input {
+    flex: 1;
+}

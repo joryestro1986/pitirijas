@@ -1,0 +1,396 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="DIFMaster.master.cs" Inherits="vDIFCapullos.DIFMaster" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>DIF Capullos</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="font-awesome/css/all.css" rel="stylesheet" />
+    <link href="css/animate.css" rel="stylesheet" />
+    <link href="css/select2.min.css" rel="stylesheet">
+    <link href="css/select2-bootstrap4.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/DIF.css" rel="stylesheet" />
+
+    <asp:ContentPlaceHolder ID="headCss" runat="server">
+    </asp:ContentPlaceHolder>
+
+    <style>
+
+
+        .table-responsive {
+            overflow-x: hidden !important
+        }
+         .dataTables_wrapper .col-sm-12:first-child {
+                  overflow: auto
+              }
+        @media (max-width: 750px) {
+              .form-row {
+                  flex-direction: column;
+                  align-items: center
+              }
+
+                  .form-row .col-2 {
+                      max-width: 100%;
+                      margin-bottom: 15px;
+                  }
+
+              .dataTables_wrapper .col-sm-12:first-child {
+                  overflow: auto
+              }
+          }
+
+         
+        /*        #mychart {
+            margin: 0 auto;
+            background: transparent url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/t-160/so1.png) no-repeat center center;
+
+        }*/
+
+          .cardContent {
+            position: relative;
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            min-width: 0;
+            word-wrap: break-word;
+            background-color: #fff;
+            background-clip: border-box;
+            border: 1px solid rgba(0,0,0,.125);
+            border-radius: 0.25rem;
+            border-top-color: white;
+        }
+
+        
+        
+        canvas {
+            -moz-user-select: none;
+            -webkit-user-select: none;
+            -ms-user-select: none;
+        }
+    </style>
+    <style>
+        .btn-gray {
+            background-color: transparent;
+            color: #808080;
+            border-color: #808080;
+        }
+
+            .btn-gray:hover, .btn-gray.active {
+                background-color: #808080;
+                color: white;
+                border-color: #808080;
+            }
+
+        .btn-orange {
+            background-color: transparent;
+            color: #808080;
+            border-color: #808080;
+        }
+
+            .btn-orange:hover, .btn-orange.active {
+                background-color: darkorange;
+                color: white;
+                border-color: darkorange;
+            }
+
+        .btn-down > .pri {
+            display: block;
+        }
+
+        .btn-down > .sec {
+            display: none;
+        }
+
+        .btn-down:hover > .pri {
+            display: none;
+            cursor: pointer;
+        }
+
+        .btn-down:hover > .sec {
+            display: block;
+            cursor: pointer;
+        }
+
+            .btn-down:hover > .sec:hover {
+                opacity: .7;
+            }
+
+        .bolder {
+            font-weight: bolder;
+        }
+
+        @media (min-width: 576px) {
+            .modal-dialog {
+                max-width: none;
+                margin: .5rem;
+            }
+        }
+
+        .navbar-fixed-top, .navbar-static-top {
+           background: none;  
+        }
+
+
+      .Outer {
+            /* border: solid 1px red; */
+            padding-top: 0px;
+            MARGIN-TOP: 0PX;
+        }  
+    .group:before,
+    .group:after {
+        content: "";
+        display: table;
+    }
+    .group:after {
+        clear: both;
+    }
+    .group {
+        zoom: 1;
+    }
+    body { 
+    	background: #222; 
+    }
+    #content { 
+    	background: white; 
+    	min-height: 400px; 
+    }
+    a {
+        color: #b88b48 !important;
+        text-decoration: none !important;
+    }
+    
+    .tabs { 
+    	list-style: none; 
+    	margin: 4px auto 0; 
+    	width: 100%;
+    }
+		.tabs li { 
+		  /* Makes a horizontal row */
+			float: left; 
+			
+			/* So the psueudo elements can be
+			   abs. positioned inside */
+			position: relative; 
+		}
+		.tabs a { 
+		  /* Make them block level
+		     and only as wide as they need */
+           
+		  float: left; 
+		  padding: 10px 40px; 
+		  text-decoration: none;
+		  
+		  /* Default colors */ 
+		  color: black;
+		  background: #ddc385; 
+		  
+		  /* Only round the top corners */
+		  -webkit-border-top-left-radius: 15px;
+		  -webkit-border-top-right-radius: 15px;
+		  -moz-border-radius-topleft: 15px;
+		  -moz-border-radius-topright: 15px;
+		  border-top-left-radius: 15px;
+		  border-top-right-radius: 15px; 
+		}
+		.tabs .active {
+		  /* Highest, active tab is on top */
+		  z-index: 3;
+		}
+		.tabs .active a { 
+		  /* Colors when tab is active */
+		  background: white; 
+		  color: black; 
+		}
+		.tabs li:before, .tabs li:after, 
+		.tabs li a:before, .tabs li a:after {
+		  /* All pseudo elements are 
+		     abs. positioned and on bottom */
+		  position: absolute;
+		  bottom: 0;
+		}
+		/* Only the first, last, and active
+		   tabs need pseudo elements at all */
+		.tabs li:last-child:after,   .tabs li:last-child a:after,
+		.tabs li:first-child:before, .tabs li:first-child a:before,
+		.tabs .active:after,   .tabs .active:before, 
+		.tabs .active a:after, .tabs .active a:before {
+		  content: "";
+		}
+		.tabs .active:before, .tabs .active:after {
+		  background: white; 
+		  
+		  /* Squares below circles */
+		  z-index: 1;
+		}
+		/* Squares */
+		.tabs li:before, .tabs li:after {
+		  background: #ddc385;
+		  width:  10px; 
+		  height: 10px;
+		}
+		.tabs li:before {
+		  left: -10px;      
+		}
+		.tabs li:after { 
+		  right: -10px;
+		}
+		/* Circles */
+		.tabs li a:after, .tabs li a:before {
+		  width: 20px; 
+		  height: 20px;
+		  /* Circles are circular */
+		  -webkit-border-radius: 10px;
+		  -moz-border-radius:    10px;
+		  border-radius:         10px;
+		  background: #F75675;
+		  
+		  /* Circles over squares */
+		  z-index: 2;
+		}
+		.tabs .active a:after, .tabs .active a:before {
+		  background: #ddc385;
+		}
+		/* First and last tabs have different
+		   outside color needs */
+		.tabs li:first-child.active a:before,
+		.tabs li:last-child.active a:after {
+		  background: #F75675;
+		}
+		.tabs li a:before {
+		  left: -20px;
+		}
+		.tabs li a:after {
+		  right: -20px;
+		}
+       @media (max-width: 600px) {
+           .d-xs-none {
+               display: none !important;
+           }
+       }
+
+    </style>
+     
+    <asp:ContentPlaceHolder ID="headStyle" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body class="top-navigation">
+
+
+    <div id="wrapper">
+        <div id="page-wrapper" class="pink-bg dashbard-1">
+            <div class="row" style="background-color:white !important; border-bottom:1px solid #aeaeae">
+                <div class="col-sm-2 col-3 offset-sm-1" style="padding:10px;">
+                    <img src="images/DIFLogo.png" class="img-container" />
+                </div>
+                <div class="col-6" style="text-align:center; margin:auto; top:0; bottom:0; right:0; left:0;">
+                    <h2 style="color:#b88b48; font-weight:900 !important;">CAPULLOS</h2>
+                </div>
+                <div class="col-3">
+
+                </div>
+            </div>
+
+
+            <div class="row d-none">
+
+
+                <a id="TabDashInicial" href="EstadisticasDIFDash.aspx" class="col-4 btnMenu" style="padding:20px; text-align:center; border:1px solid; border:1.2px solid #903333;">
+                    <span class="btncab">INICIO</span>
+                </a>
+                <a id="TabGraficas" href="Graficas.aspx" class="col-4 btnMenu" style="padding:20px; text-align:center; border:1px solid; border:1.2px solid #903333;">
+                    <span class="btncab">GRÁFICAS</span>
+                </a>
+                <a id="TabTabuladores" href="Tabuladores.aspx" class="col-4 btnMenu" style="padding:20px; text-align:center; border:1px solid; border:1.2px solid #903333;">
+                    <span class="btncab">TABULADORES</span>
+                </a> 
+<%--                    <a id="TabDashInicial" href="EstadisticasDIFDash.aspx" class="col-sm-1 col-4 offset-sm-1 btnMenu" style="padding:20px; text-align:center; border:1.2px solid #903333;color: #fff !important">
+                        <i class="fa fa-home" aria-hidden="true"></i>
+                    </a>
+                    <a id="TabGraficas" href="Graficas.aspx" class="col-sm-4 col-4  btnMenu" style="padding:20px; text-align:center; border:1.2px solid #903333;color: #fff !important">
+                        <span class="btncab">GRÁFICAS</span>
+                    </a>
+                    <a id="TabTabuladores" href="Tabuladores.aspx" class="col-sm-4 col-4  btnMenu" style="padding:20px; text-align:center; border:1px solid; border:1.2px solid #903333;color: #fff !important">
+                        <span class="btncab">TABULADORES</span>
+                    </a> --%>
+<%--                <a href="CertificacionOrganoPen.html" class="col-2 btndivOrganoPen" style="padding:20px; text-align:center; border:1px solid; border:1.2px solid #aeaeae;">
+                    <span class="btncab">CERTIFICACION</span>
+                </a>
+                <a href="AboutOrganoPen.html" class="col-2 btndivOrganoPen" style="padding:20px; text-align:center; border:1px solid; border:1.2px solid #aeaeae;">
+                    <span class="btncab">ENCUESTAS</span>
+                </a>
+                <a href="AboutOrganoPen.html" class="col-sm-2 col-3 btndivOrganoPen" style="padding:20px; text-align:center; border:1px solid; border:1.2px solid #aeaeae;">
+                    <span class="btncab">QUIENES SOMOS</span>
+                </a>--%>
+            </div>
+
+
+
+
+
+            <ul id="divTabs" class="tabs group">
+	            <li id="li_TabDashInicial"><a href="EstadisticasDIFDash.aspx?tab=1"><i class="fa fa-home" aria-hidden="true"></i><span id="txtMenu1" class="d-xs-none"> INICIO</span></a></li> 
+	            <li id="li_TabGraficas"><a href="Graficas.aspx?tab=2"><i class="fa fa-chart-bar" aria-hidden="true"></i><span id="txtMenu2"  class="d-xs-none"> GRÁFICAS</span></a></li> 
+	            <li id="li_TabTabuladores"><a href="Tabuladores.aspx?tab=3"><i class="fa fa-table" aria-hidden="true"></i><span  id="txtMenu3" class="d-xs-none"> TABULADORES</span></a></li> 
+	        </ul>   
+
+
+            <div class="Outer">
+                <div id="warningMaster"  class="d-none" style="margin-top: 1rem" ></div>
+                <asp:ContentPlaceHolder ID="contentBody" runat="server" >
+                </asp:ContentPlaceHolder>
+            </div>
+
+
+        </div>
+    </div>
+
+    
+
+    <script src="js/VIINSOFT/general.js"></script>
+
+    <asp:ContentPlaceHolder ID="footerJs" runat="server">
+    </asp:ContentPlaceHolder>
+
+            <script>
+
+                $(document).ready(function () {
+
+                    $("#txtMenu2").removeClass("d-none");
+
+                    vTab = obtenerQS('tab');
+                    if (vTab == 1)
+                        $("#li_TabDashInicial").addClass('active');
+
+                    if (vTab == 2)
+                        $("#li_TabGraficas").addClass('active');
+
+                    if (vTab == 3)
+                        $("#li_TabTabuladores").addClass('active');
+                });
+
+                $(function () {
+                    $("li").click(function (e) {
+                        //e.preventDefault();
+                        $("li").removeClass("active");
+                        $(this).addClass("active");
+                    });
+                });
+
+            </script>
+
+
+    <asp:ContentPlaceHolder ID="footerScript" runat="server">
+    </asp:ContentPlaceHolder>
+
+</body>
+</html>
